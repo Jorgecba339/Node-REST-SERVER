@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'dev') {
 
 } else {
 
-    urlBD = 'mongodb+srv://JDBaigorria:1oYTkYZTcQ9HqkNm@cluster0-emcf1.mongodb.net/cafe'
+    urlBD = process.env.MONGO_URI;
 }
 
 process.env.URLDB = urlBD;
